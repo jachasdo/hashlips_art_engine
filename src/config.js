@@ -5,17 +5,17 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
+const namePrefix = "Pengyn";
+const description = "The Pengyn collection is 100 generatable blockchain Pengyns! All proceeds go to benefit animal care charity and local shelters.";
+const baseUri = "ipfs://Qmbd8nZtMgApPsLCJeAW7PNQEsGWjEKJuC8R8VmuyM6Rk7";
 
 const solanaMetadata = {
   symbol: "YC",
-  seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  seller_fee_basis_points: 720, // Define how much % you want from secondary market sales 1000 = 10%
+  external_url: "https://www.youtube.com/c/monstrousityy",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      address: "0x73e319d250827Db3B9beA17391cBecc5c0553f43",
       share: 100,
     },
   ],
@@ -24,15 +24,23 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+growEditionSizeTo: 100,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Special background" },
+      { name: "Left foot" },
+      { name: "Right foot" },
+      { name: "Body" },
+      { name: "Color" },
+      { name: "Stomach" },      
+      { name: "Arms" },
+      { name: "Neck" },
+      { name: "Right eye" },
+      { name: "Left eye" },
+      { name: "Right eye color" },
+      { name: "Left eye color" },
+      { name: "Special" },
+      { name: "Beak" },
     ],
   },
 ];
@@ -42,8 +50,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 500,
+  height: 500,
   smoothing: false,
 };
 
